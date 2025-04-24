@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate RPS Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="container">
+    <h1>Ultimate Rock Paper Scissors</h1>
+    <div class="icons">
+      <div class="icon" onclick="playGame('rock')">✊</div>
+      <div class="icon" onclick="playGame('paper')">✋</div>
+      <div class="icon" onclick="playGame('scissors')">✌️</div>
+    </div>
+    <div class="players">
+      <p id="playerSDisplay">Player: -</p>
+      <p id="computerSDisplay">Computer: -</p>
+    </div>
+    <div class="result" id="result"></div>
+    <div class="scores">
+      <p id="playerScore">Player Score: 0</p>
+      <p id="computerScore">Computer Score: 0</p>
+    </div>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem;">
+      <button class="reset-btn" onclick="resetGame()">Reset</button>
+      <button class="dark-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+    <div class="leaderboard">
+      <h3>Leaderboard (Past Results)</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
